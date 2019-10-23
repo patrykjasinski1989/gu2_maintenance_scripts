@@ -1,6 +1,6 @@
 create table sap_order_notes_backup as select * from ptk_sap_order where trans_code in (
     select t.trans_code from ptk_otsa_transaction t where t.status='3C' 
-    and (t.ncs_error_desc like 'SAP service SalesOrderModify returned an E statusBrak numeru seryjnego%'
+    and (t.ncs_error_desc like 'SAP service SalesOrderModify returned an E status%'
         or t.ncs_error_desc = 'Blad przetwarzania procesu: .....SSOM.197'
         or t.ncs_error_desc = 'Blad przetwarzania procesu: Index: 0, Size: 0')
     );
