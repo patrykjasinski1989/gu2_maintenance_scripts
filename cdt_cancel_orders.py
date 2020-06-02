@@ -4,7 +4,7 @@ import csv
 import re
 import requests
 
-USERNAME = ''
+USERNAME = 'wojkrzemien'
 TAURUS_COOKIE = ''
 
 CREATE_SESSION_URL = 'http://ncdt1-slb.centertel.pl:7004/jbpm/soap?operation.invoke=createSession'

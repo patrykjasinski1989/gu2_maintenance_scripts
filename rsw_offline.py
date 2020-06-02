@@ -46,9 +46,9 @@ def print_status(driver):
         server = urlparse(url).netloc
         driver.get(url)
         if 'w trybie Offline' in driver.page_source:
-            print server + " OFFLINE"
+            print(server + " OFFLINE")
         else:
-            print server + " ONLINE"
+            print(server + " ONLINE")
 
 
 def main():
