@@ -53,7 +53,7 @@ CUSTOM_CSS = """.information {background: #D6F6FF !important;}
 .high {background: #FF9999 !important;}
 .disaster {background: #FF3838 !important;}
 body {margin: 20px;}
-.wrapper {display: grid;grid-template-columns: 100%;grid-gap: 0px;}
+.wrapper {display: grid;grid-template-columns: 50% 50%;grid-gap: 0px;}
 .box {border-radius: 0px;padding: 5px;}"""
 open(HTML_FILE, 'w').write(HTML_HEADER)
 open(CSS_FILE, 'a').write(CUSTOM_CSS)
